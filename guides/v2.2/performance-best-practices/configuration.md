@@ -1,8 +1,6 @@
 ---
 group: perf-best-practices
 title: Configuration best practices
-version: 2.2
-github_link: performance-best-practices/configuration.md
 functional_areas:
   - Configuration
   - System
@@ -18,6 +16,12 @@ All asynchronous operations in {{site.data.var.ce}} are performed using the Linu
 ## Indexers
 
 An indexer can run in either **Update on Save** or **Update on Schedule** mode. The **Update on Save** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. Magento recommends using **Update on Schedule** mode in production, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each Magento indexer separately on the  **System > Index Management** configuration page.
+
+We recommend that you use index parallelization and that you set threads count for the index process based on: 
+- Threads count >= max dimension count (across all indexers)
+- Threads count <= cores count
+
+See the [Reindex in parallel mode section]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-index.html#config-cli-subcommands-index-reindex-parallel) of [Manage the indexers](({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-index.html) for more information.
 
 ## Caches
 
@@ -60,3 +64,11 @@ When you activate the **Enable Javascript Bundling** option, you allow Magento t
 * Activating the HTTP2 protocol can be a good alternative to using JS bundling. The protocol provides pretty much the same benefits.
 * We do not recommend using deprecated settings like merging JS and CSS files, as they were designed only for synchronously-loaded JS in the HEAD section of the page. Using this technique can cause bundling and requireJS logic to work incorrectly.
 </div>
+
+## Database maintenance schedule {#database}
+
+We recommend performing periodic database backups for your Staging and Production instances. Due to the I/O intensive nature of backup operations, you may encounter slower backups and potential issues. Running database processes for multiple environments at the same time may potentially run slower due to contention for available resources.
+
+For better performance, schedule your backups to run in succession, one at a time, at off-peak times. This method avoids I/O contention and reduces time to complete, especially for smaller instances, larger databases, and so on.
+
+For example, we recommend scheduling a backup of your Production database followed up by the Staging database when your stores encounter lower visits. 

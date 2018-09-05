@@ -5,13 +5,11 @@ title: UI-select Component
 menu_title: UI-select Component
 menu_node:
 menu_order: 6
-version: 2.0
-github_link: ui-components/ui-secondary-uiselect.md
 redirect_from: /guides/v2.0/ui-library/ui-secondary-uiselect.html
 
 ---
 
-<h3 id="uiselect">UI-select component</h3>
+### UI-select component   {#uiselect}
 
 The UI-select component is used to provide checkbox interface for a specific listing or a specific data set. The component allows selecting a collection of items.
 
@@ -109,7 +107,7 @@ Navigation keys:
                 }],
     {% endhighlight %}
     
-<h2 id="structure">Component options</h2>
+## Component options   {#structure}
 
 <table>
 <tbody>
@@ -218,4 +216,4 @@ Navigation keys:
 
 Here is an example of configuration of select component. It is used as column filter and has 3 levels of options, with not selectable label for every level, without checkboxes:
 
-<img src="{{ site.baseurl }}/common/images/ui-select.jpg" alt="view the configuration">
+![view the configuration]({{ site.baseurl }}/common/images/ui-select.jpg)

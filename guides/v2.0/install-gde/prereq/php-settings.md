@@ -6,8 +6,6 @@ menu_title: Required PHP settings
 menu_order: 24
 level3_menu_node: level3child
 level3_subgroup: php
-version: 2.0
-github_link: install-gde/prereq/php-settings.md
 functional_areas:
   - Install
   - System
@@ -49,12 +47,13 @@ This topic discusses how to set required {% glossarytooltip bf703ab1-ca4b-48f9-b
 {% endcollapsible %}
 
 ### Step 1: Find PHP configuration files {#php-required-find}
+
 This section discusses how you find the configuration files necessary to update required settings.
 
 {% collapsible To find the PHP configuration file, php.ini: %}
 To find the web server configuration, run a <a href="{{ page.baseurl }}/install-gde/prereq/optional.html#install-optional-phpinfo">`phpinfo.php` file</a> in your web browser and look for the Loaded Configuration File as follows:
 
-<img src="{{ site.baseurl }}/common/images/config_phpini-webserver.png" width="700px">
+![]({{ site.baseurl }}/common/images/config_phpini-webserver.png){: width="700px"}
 
 To locate the PHP command-line configuration, enter
 

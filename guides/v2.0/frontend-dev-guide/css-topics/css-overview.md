@@ -5,8 +5,6 @@ title: Cascading style sheets (CSS)
 menu_title: Cascading style sheets (CSS)
 menu_order: 1
 menu_node: parent
-version: 2.0
-github_link: frontend-dev-guide/css-topics/css-overview.md
 redirect_from: /guides/v1.0/frontend-dev-guide/css-topics/css-overview.html
 functional_areas:
   - Frontend
@@ -25,21 +23,18 @@ To customize {% glossarytooltip 1a70d3ac-6bd9-475a-8937-5f80ca785c14 %}storefron
 *	Create your own LESS files using the built-in LESS preprocessor. 
 *	Create your own CSS files, optionally having compiled them using third-party CSS preprocessor.
 
-
 ## Things to remember when working with styles
 
 Make sure that you [set]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-mode.html) your Magento application to the developer or default [mode]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html).
 
 If your style changes do not apply after refreshing the page, cleaning the static files cache might help. See the [Clean static files cache topic]({{ page.baseurl }}/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) for instructions how to do this.
 
-<h2 id="css_walk">Change styles: walkthrough</h2>
+## Change styles: walkthrough   {#css_walk}
 
 Here is a simple illustration of changing styles using the first approach: changing the color of the buttons of a certain class.
 In the Blank theme, the buttons of the `.action.primary` class, so called *primary* buttons, are blue. The following image illustrates this:
 
-<div style="border: 1px solid #ABABAB">
-<img src="{{ site.baseurl }}/common/images/css_over1.png" alt="The default view of a product page, with the orange Add to Cart button">
-</div>
+![The default view of a product page, with the orange Add to Cart button]({{ site.baseurl }}/common/images/css_over1.png)
 
 OrangeCo wants to change the color of the primary buttons to orange. To achieve this, they do the following:
 
@@ -57,11 +52,10 @@ OrangeCo wants to change the color of the primary buttons to orange. To achieve 
 
 When OrangeCo <a href="{{ page.baseurl }}/frontend-dev-guide/themes/theme-apply.html" target="_blank">applies their theme</a>, the primary buttons will look like on the following image:
 
-<div style="border: 1px solid #ABABAB">
-<img src="{{ site.baseurl }}/common/images/css_over2.png" alt="The customized view of a product page, with the grey Add to Cart button">
-</div>
+![The customized view of a product page, with the grey Add to Cart button]({{ site.baseurl }}/common/images/css_over2.png)
 
-<h2 id="css_topics">What's in this chapter</h2>
+## What\'s in this chapter   {#css_topics}
+
 Other topics of this chapter describe the following:
 
 * <a href="{{ page.baseurl }}/frontend-dev-guide/css-topics/css-themes.html" target="_blank">Including CSS</a>: how stylesheets are organized and included to be used for store pages in the Magento application. 

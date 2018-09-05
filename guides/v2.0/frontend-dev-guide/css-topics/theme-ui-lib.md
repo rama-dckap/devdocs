@@ -3,21 +3,20 @@ group: fedg
 subgroup: D_CSS
 title: Magento UI library
 menu_order: 4
-version: 2.0
-github_link: frontend-dev-guide/css-topics/theme-ui-lib.md
 redirect_from: /guides/v1.0/frontend-dev-guide/css-topics/theme-ui-lib.html
 functional_areas:
   - Frontend
   - Theme
 ---
 
-<h2 id="fedg_using-ui-lib_overview">What's in this topic</h2>
+## What\'s in this topic   {#fedg_using-ui-lib_overview}
 
 The Magento UI {% glossarytooltip 08968dbb-2eeb-45c7-ae95-ffca228a7575 %}library{% endglossarytooltip %} is a flexible <a href="http://lesscss.org/" target="_blank">LESS</a>-based {% glossarytooltip b00459e5-a793-44dd-98d5-852ab33fc344 %}frontend{% endglossarytooltip %} library designed to assist Magento {% glossarytooltip d2093e4a-2b71-48a3-99b7-b32af7158019 %}theme{% endglossarytooltip %} developers. It employs a set of mixins for base elements to ease frontend theme development and customization. 
 
 This topic describes how the library is organized, and how to use it. 
 
 ## Components provided by the UI library {#library_elements}
+
 The Magento UI library provides the ability to customize and reuse the following user interface elements and properties:
 
 *	actions-toolbar
@@ -41,9 +40,7 @@ The Magento UI library provides the ability to customize and reuse the following
 
 The following illustration shows a {% glossarytooltip 1a70d3ac-6bd9-475a-8937-5f80ca785c14 %}storefront{% endglossarytooltip %} product page containing some of the preceding elements:
 
-<div style="border: 1px solid #ABABAB">
-<img src="{{ site.baseurl }}/common/images/ui_lib1.png" alt="A product page with user interface elements specified">
-</div>
+![A product page with user interface elements specified]({{ site.baseurl }}/common/images/ui_lib1.png)
 
 ## Mixin location {#fedg_using-ui-lib_mixins}
 
@@ -88,7 +85,6 @@ The following illustration shows a {% glossarytooltip 1a70d3ac-6bd9-475a-8937-5f
     │    └── blank-theme-icons.png (Library icons sprite)
     └── jquery/ (Library javascript files)</pre>
 
-
 ## Predefined variables {#fedg_using-ui-lib_predef-vars}
 
 If your theme <a href="{{ page.baseurl }}/frontend-dev-guide/themes/theme-inherit.html" target="_blank">inherits</a> from any Magento out-of-the-box theme, for example Blank, you can easily customize any element of a store page without changing any {% glossarytooltip 6c5cb4e9-9197-46f2-ba79-6147d9bfe66d %}CSS{% endglossarytooltip %} code or templates. Customization can be performed by simply changing in your theme the values of the predefined variables used in the UI library or parent theme mixins.
@@ -103,7 +99,7 @@ To change the default library variables values, specify the new values for the r
 
 The following figure shows the product page shown earlier in this topic, after a custom theme was applied. The theme customized Blank by redefining variables only.
 
-<img src="{{ site.baseurl }}/common/images/ui_lib2.png" alt="Changing design by redefining variables">
+![Changing design by redefining variables]({{ site.baseurl }}/common/images/ui_lib2.png)
 
 ## Your custom variables {#fedg_using-ui-lib_vars}
 

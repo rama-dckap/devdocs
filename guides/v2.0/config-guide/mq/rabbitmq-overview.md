@@ -5,9 +5,7 @@ title: Message Queues Overview
 menu_title: Message Queues (Magento Commerce only)
 menu_order: 1
 menu_node: parent
-version: 2.0
 ee_only: True
-github_link: config-guide/mq/rabbitmq-overview.md
 functional_areas:
   - Configuration
   - System
@@ -18,7 +16,7 @@ The Message Queue Framework (MQF) is a system within {{site.data.var.ee}} that a
 
 The following diagram illustrates the Message Queue Framework.
 
-<img src="{{ site.baseurl }}/common/images/mq.png">
+![]({{ site.baseurl }}/common/images/mq.png)
 
 * A {% glossarytooltip d5777fe2-f786-45d9-b052-cca8a10120d9 %}publisher{% endglossarytooltip %} is a component that sends messages to an exchange. It knows which exchange to publish to and the format of the messages it sends.
 

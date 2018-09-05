@@ -1,10 +1,8 @@
 ---
 group: integration-testing
 title: Running Integration Tests
-version: 2.1
 contributor_name: Vinai Kopp
 contributor_link: http://vinaikopp.com/
-github_link: test/integration/integration_test_execution.md
 redirect_from:
  - /guides/v2.0/test/integration/integration_test_setup.html
  - /guides/v2.1/test/integration/integration_test_setup.html
@@ -310,7 +308,8 @@ Then configure the integration test configuration file to be used.
 
 The only difference in the run configuration is that the integration test `phpunit.xml.dist` or `phpunit.xml` configuration file from the directory `dev/tests/integration` has to be selected.
 
-<img src="{{ site.baseurl }}/common/images/phpstorm_run_config_class_integration_tests.png" alt="Integration Test Class run configuration">{:width="600px"}
+![Integration Test Class run configuration]({{ site.baseurl }}/common/images/phpstorm_run_config_class_integration_tests.png){: width="600px"}
+
 
 <!-- LINK DEFINITIONS -->
 

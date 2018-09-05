@@ -4,8 +4,6 @@ subgroup: 3_Widgets
 title: Gallery widget
 menu_order: 7
 menu_title: Gallery widget
-version: 2.0
-github_link: javascript-dev-guide/widgets/widget_gallery.md
 ---
 
 ## Overview
@@ -14,7 +12,7 @@ The gallery {% glossarytooltip 5bfa8a8e-6f3e-4fed-a43e-62339916f02e %}jQuery{% e
 
 The following picture is an illustration of image displaying on the product page using the gallery widget:
 
-<img src="{{ site.baseurl }}/common/images/gallery_scr.png" width="650px" alt="A product page with preview and thumbnails">
+![A product page with preview and thumbnails]({{ site.baseurl }}/common/images/gallery_scr.png){: width="650px"}
 
 In addition, the [magnifier widget]({{ page.baseurl }}/javascript-dev-guide/widgets/widget_gallery_mg.html) can be used to demonstrate images in 100% scaled size in separate dedicated layer, and the gallery fullscreen mode can be used to navigate the entire full sized photo.
 
@@ -28,10 +26,7 @@ The gallery widget source code is <a href="{{ site.mage2000url }}lib/web/mage/ga
 
 The gallery magnifier source is <a href="{{ site.mage2000url }}lib/web/magnifier/magnify.js"> lib/web/magnifier/magnify.js</a>.
 
-
-
-<h3>Contents</h3>
-
+### Contents
 
 ## Initialize the gallery widget {#gallery_init}
 
@@ -95,7 +90,6 @@ Example of declarative initialization:
 </script>
 
 {%endhighlight%}
-
 
 ## Options {#gallery_options}
 
@@ -464,7 +458,6 @@ The fullscreen and breakpoints options are set in a similar way:
 {%endhighlight%}
 
 For illustration of setting gallery option in `view.xml`, you can reference to the [view.xml of the Blank theme]({{ site.mage2000url }}app/design/frontend/Magento/blank/etc/view.xml#L184).
-
 
 ## Gallery API {#gallery_api}
 
